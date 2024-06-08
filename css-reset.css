@@ -3,6 +3,10 @@ html {
   font-size: 16px;
 }
 
+* {
+  margin: 0;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -17,7 +21,17 @@ ol, ul {
   list-style: none;
 }
 
-img {
+/* Stop long words causing overflow(Optional) */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
   max-width: 100%;
   height: auto;
+}
+
+input, button, textarea, select {
+  font: inherit;
 }
